@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/2022/ChatAPP/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/2022/ChatAPP/app/src/main/res/layout/activity_main.xml" value="0.35507246376811596" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/2022/ChatAPP/app/src/main/res/layout/activity_search.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/2022/ChatAPP/app/src/main/res/layout/activity_sign_up.xml" value="0.36614583333333334" />
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pick.xml" value="0.19157608695652173" />

@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun searchBT(view: View){
         var search=binding.idSearch.text.toString()
-        search="star planet"//anchor name
+        //search="star planet"//anchor name
         //Toast.makeText(this,search.toString(),Toast.LENGTH_LONG).show()
         AlertDialog.Builder(this).setTitle("Go Searching")//設定標題
                     .setMessage("Please go to Search Activity")//設定標題內的訊息
@@ -36,10 +36,14 @@ class MainActivity : AppCompatActivity() {
         Intent(this,SearchActivity::class.java).apply {
             putExtra("Your Anchor name",search)
             startActivity(this)
-        } //當按下searchBT按鈕,intent物件轉換至searchActivity(增加可讀性)
+        } //當按下searchBT按鈕,intent物件轉換至SearchActivity(增加可讀性)
     }
     fun personBT(view: View){
-
+        var person=binding.idPerson.text.toString()
+        Intent(this,LogInActivity::class.java).apply {
+            putExtra("Your Anchor name",person)
+            startActivity(this)
+        } //當按下searchBT按鈕,intent物件轉換至PersonActivity(增加可讀性)
     }
 
     override fun onStart() {//當activity產生後(未顯示在手機畫面上),呼叫onStart()
