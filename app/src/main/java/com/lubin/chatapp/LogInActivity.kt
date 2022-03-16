@@ -7,14 +7,25 @@ import android.view.View
 import com.lubin.chatapp.databinding.ActivityLoginBinding
 
 class LogInActivity : AppCompatActivity() {
+    var remember=false
     lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
+
     fun loginBT(view: View){
-        var login=binding.idLogin.text.toString()
+        binding.buttonLogin.setOnClickListener {
+            val account=binding.inputAccount.text.toString()
+            val password=binding.inputPassword.text.toString()
+            if(account=="lubin"&&password=="20220321"){
+                if(remember){
+
+                }
+            }
+        }
+        var login=binding.buttonLogin.text.toString()
         Intent(this,MainActivity::class.java).apply {
             putExtra("Your Anchor name",login)
             startActivity(this)

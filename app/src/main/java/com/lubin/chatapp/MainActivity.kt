@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun personBT(view: View){
         var person=binding.idPerson.text.toString()
-        Intent(this,LogInActivity::class.java).apply {
+        Intent(this,LoginFragment::class.java).apply {
             putExtra("Your Anchor name",person)
             startActivity(this)
         } //當按下searchBT按鈕,intent物件轉換至PersonActivity(增加可讀性)
