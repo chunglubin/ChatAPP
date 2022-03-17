@@ -1,5 +1,6 @@
 package com.lubin.chatapp
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,12 +14,15 @@ class LogInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        var account=getSharedPreferences("Login account",Context.MODE_PRIVATE).getString("pref_account","")
+        var password=getSharedPreferences("Login password",Context.MODE_PRIVATE).getString("pref_password","")
+
     }
 
     fun loginBT(view: View){
         binding.buttonLogin.setOnClickListener {
-            val account=binding.inputAccount.text.toString()
-            val password=binding.inputPassword.text.toString()
+            var account=binding.inputAccount.text.toString()
+            var password=binding.inputPassword.text.toString()
             if(account=="lubin"&&password=="20220321"){
                 if(remember){
 
